@@ -5,7 +5,7 @@ $name = $_POST['name'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
 
-$mailheader = "Formularz".$name."\r\n";
+$mailheader = "Form".$name."\r\n";
 $recipient = "mkamichalski@gmail.com";
 
 
@@ -19,11 +19,11 @@ echo'
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularz</title>
+    <title>Form</title>
 </head>
 <body>
     <div class="wrap">
-        Wysłano!
+       Sent!
     </div>
 </body>
 </html>
