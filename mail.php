@@ -14,16 +14,16 @@ $mailheader = "Form".$name."\r\n";
 
 $mail = new PHPMailer;
 $mail->isSMTP(); 
-$mail->SMTPDebug = 1; // 0 = off (for production use) - 1 = client messages - 2 = client and server messages
+$mail->SMTPDebug = 1; 
 $mail->Host = "mail.smtp2go.com";
-$mail->Port = 2525; // TLS only
-$mail->SMTPSecure = 'tls'; // ssl is depracated
+$mail->Port = 2525; 
+$mail->SMTPSecure = 'tls'; 
 $mail->SMTPAuth = true;
-$mail->Username = 'michalskipro';
-$mail->Password = 'Sender135#';
-$mail->setFrom('marcin@michalski.pro', 'Form');
+$mail->Username = '';
+$mail->Password = '';
+$mail->setFrom('xxx@xx.com', 'Form');
 // $mail->addReplyTo('@gmail.com', ' Name');
-$mail->addAddress('mkamichalski@gmail.com');
+$mail->addAddress('xxx@gmail.com');
 $mail->Subject = $subject;
 $mail->msgHTML("test".$message."\r\n"); //$mail->msgHTML(file_get_contents('contents.html'), __DIR__); //Read an HTML message body from an external file, convert referenced images to embedded,
 $mail->AltBody = 'HTML messaging not supported';
